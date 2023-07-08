@@ -8,3 +8,8 @@ docker exec -it local-cassandra-instance cqlsh -e "CREATE TABLE IF NOT EXISTS k1
 
 docker exec -it local-cassandra-instance cqlsh
 ```
+
+https://quarkus.io/guides/building-native-image
+```
+./mvnw verify -Dnative
+```

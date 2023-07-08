@@ -18,7 +18,7 @@ package com.datastax.oss.quarkus.demo;
 import com.datastax.oss.driver.api.mapper.annotations.Entity;
 import com.datastax.oss.driver.api.mapper.annotations.PartitionKey;
 import com.datastax.oss.driver.api.mapper.annotations.PropertyStrategy;
-
+import io.quarkus.runtime.annotations.RegisterForReflection;
 import lombok.Value;
 
 /**
@@ -31,9 +31,9 @@ import lombok.Value;
 @Value
 @Entity
 @PropertyStrategy(mutable = false)
+@RegisterForReflection
 public class Fruit {
 
-  @PartitionKey 
-  private String name;
+  @PartitionKey private String name;
   private String description;
 }

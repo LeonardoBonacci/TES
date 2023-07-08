@@ -5,7 +5,6 @@
 .factorypath
 .settings/
 target/
-mvnw*
 
 # Log file
 *.log
